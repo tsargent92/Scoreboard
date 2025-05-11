@@ -1,7 +1,7 @@
 function addPoints(points, team) {
-    const scoreEl = document.getElementById(team);
-    const current = parseInt(scoreEl.textContent);
-    scoreEl.textContent = current + points;
+    const score = document.getElementById(team);
+    const currentScore = parseInt(score.textContent);
+    score.textContent = currentScore + points;
     updateTeamHighlight();
 }
 

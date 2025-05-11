@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="title">American Football</h1>
+        <div class="container">
+            <div class="team">            
+                <h3 id="home-name">HOME</h3>
+                <div class="score" id="home">0</div>
+                <div class="increments">
+                    <button onclick="addPoints(1, 'home')" class="score-btn" id="home_plus1">+1</button>
+                    <button onclick="addPoints(3, 'home')" class="score-btn" id="home_plus3">+3</button>
+                    <button onclick="addPoints(6, 'home')" class="score-btn" id="home_plus6">+6</button>
+                </div>
+            </div>
+            <div class = "team">
+                <h3 id="away-name">AWAY</h3>
+                <div class="score" id="away">0</div>
+                <div class="increments">
+                    <button onclick="addPoints(1, 'away')" class="score-btn" id="away_plus1">+1</button>
+                    <button onclick="addPoints(3, 'away')" class="score-btn" id="away_plus3">+3</button>
+                    <button onclick="addPoints(6, 'away')" class="score-btn" id="away_plus6">+6</button>
+                </div>
+            </div>
+        </div>
+        <div class="reset">
+            <button onclick="resetScores()" class="reset-btn">NEW GAME</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
